@@ -26,3 +26,14 @@ function getAttributes() {
     var y = document.getElementById("w3r").type;
     alert('The value of the type attribute of the link is : ' + y);
 }
+
+//Exo 3 Q1
+function getFormValue() {
+    var x = document.getElementById("form1");
+    for (var i = 0; i < x.length; i++) {
+        if (x.elements[i].value != 'Submit') {
+            alert(x.elements[i].value);
+        }
+    }
+}
+
