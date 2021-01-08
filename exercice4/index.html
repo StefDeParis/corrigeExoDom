@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Actions utilisateur et JavaScript</title>
+    <meta charset="utf‐8" />
+    <link rel="stylesheet" href="idemm.css" />
+    <script>
+        function retournormal() {
+            document.documentElement.style.backgroundColor = 'white';
+            document.documentElement.style.color = 'black';
+            document.getElementById('bnuit').style.color = 'black';
+        }
+    </script>
+</head>
+<body onload="alert('bienvenue...');">
+    <h1>Actions utilisateur et JavaScript</h1>
+    <p>
+        Bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+    </p>
+    <div class="illustration">
+        <img src="../assets/images/chat.jpg" alt="un chat" width="200" onmouseover="alert('ron ron...');" />
+    </div>
+    <button onclick="alert('clic !');">cliquez ici !</button>
+    <br />
+    <button id="bnuit" onclick="document.documentElement.style.backgroundColor='black';
+document.documentElement.style.color='white';
+document.getElementById('bnuit').style.color='red';">
+        nuit</button>
+    <button onclick="retournormal();">jour</button>
+    <br />
+    <div class="illustration">
+        <img id="ecran" src=../assets/images/chat.jpg" alt="un chat" width="200"
+            onmouseover="document.getElementById('ecran').src='../assets/images/chien.jpg'"
+            onmouseout="document.getElementById('ecran').setAttribute('src','../assets/images/chat.jpg');" />
+    </div>
+</body>
+</html>
